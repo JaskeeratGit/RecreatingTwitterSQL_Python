@@ -2,14 +2,14 @@
 Recreating twitter with simple terminal menu interface by integrating SQL in python.
 
 DataBase Specifications: (schema)
-users(<ins>usr</ins>,pwd, name,email,city,timezone)
-follows(<ins>flwer</ins>,<ins>flwee</ins>,start_date)
-tweets(<ins>tid</ins>tid,writer,tdate,text,replyto)
-hashtags(<ins>term</ins>);
-mentions(<ins>tid</ins>,<ins>term</ins>)
-retweets(<ins>usr</ins>,<ins>tid</ins>,rdate)
-lists(<ins>lname</ins>,owner)
-includes(<ins>lname</ins>,<ins>member</ins>)
+users(<ins>usr</ins>,pwd, name,email,city,timezone)\n
+follows(<ins>flwer</ins>,<ins>flwee</ins>,start_date)\n
+tweets(<ins>tid</ins>tid,writer,tdate,text,replyto)\n
+hashtags(<ins>term</ins>)\n
+mentions(<ins>tid</ins>,<ins>term</ins>)\n
+retweets(<ins>usr</ins>,<ins>tid</ins>,rdate)\n
+lists(<ins>lname</ins>,owner)\n
+includes(<ins>lname</ins>,<ins>member</ins>)\n
 
 Login Screen
 The first screen should provide options for both registered and unregistered users. There must be also an option to exit the program. Registered users should be able to login using a valid user id and password, respectively referred to as usr and pwd in table users. After a registered user signs in, the system should list all tweets or retweets from users who are being followed; the tweets should be ordered based on date from the latest to the oldest. If there are more than 5 such tweets, only 5 would be shown and the user would be given an option to see more but again 5 at a time. The user should be able to select a tweet and see some statistics about the tweet including the number of retweets and the number of replies. Also the user should be able to compose a reply to it (see the section on composing a tweet), or retweet it (i.e. repost it to all people who follow the user).
